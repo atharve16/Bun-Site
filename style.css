@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(206, 71, 71);
+    font-family: Rubik, Arial;
+    text-align: center;
+  }
+  .hl{
+    overflow: hidden;
+    background-image: url("https://img.icons8.com/3d-fluency/94/crown.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    backface-visibility:hidden;
+    color: red;
+    font-family:fantasy; 
+    padding-top:50px;
+  }
+
+  form {
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
+  }
+  
+  form hr {
+    width: 15%;
+  }
+
+  #overlay {
+    width: 80%;
+    margin: 3% auto;
+    height: 95vh;
+    background-color: white;
+    border-radius: 40px;
+  }
+
+  .toppings label, .cheesy label {
+    margin-right: 25px;
+  }
+  .toppings label {
+    display: none;
+}
+
+/* Style for the custom checkbox */
+.toppings label{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Style the pseudo-element representing the custom checkbox */
+.toppings label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000; /* Border color for the checkbox */
+    background-color: #fff; /* Background color for the checkbox */
+}
+
+/* Style the custom checkbox when it's checked */
+.toppings label::before {
+    background-color: red; /* Change the background color when checked */
+}
+
+  button {
+    display: inline-block;
+    border-radius:20;
+    color: black;
+    background-color: rgb(208, 8, 8);
+  }
+  button:hover {
+    color:white;
+    background-color:rgb(46, 22, 86);
+  }
